@@ -1,0 +1,133 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+p {
+    margin: 0px;
+}
+
+.NavBar {
+    font-family: raleway;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 70px;
+    border: solid black 1px;
+    position: fixed;
+    top: 0;
+}
+
+.Links a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.Links a:hover {
+    color: rgb(56, 159, 228);
+    transition: border-bottom .2s, border-left .4s, border-top .6s, border-right .9s;
+    border-right: double whitesmoke 3px;
+    border-left: double whitesmoke 3px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+   
+}
+
+.Links {
+    margin-left: 65%;
+    margin-top: -15px;
+}
+
+
+.Logo p {
+    width: 200px;
+    padding-top: 25px;
+    padding-left: 40px;
+    color: rgb(56, 159, 228);
+    
+}
+
+.Main {
+    font-family: raleway;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px black;
+
+    background-image: url('./background2.jpg');
+    height: 100vh;
+    width: 100vw;
+ 
+    background-size: cover; 
+    background-repeat:no-repeat;
+}
+
+.Main h1 {
+    padding-top: 27%;
+}
+
+
+
+.logSign a {
+    text-shadow: none;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: grid;
+    
+}
+
+.aboutTitle {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4% 4% 4% 4%;
+    grid-gap: 4%;
+}
+
+.firstAbout {
+    border: solid 3px black;   
+} 
+
+.firstAbout p {
+    margin: 3% 3% 3% 3%;
+}
+
+.secondAbout {
+    border: solid 3px black;
+}
+
+.secondAbout p {
+    margin: 3% 3% 3% 3%;
+}
+
+/* .login {
+    margin-top: 10%;
+}
+
+.login input {
+    width: 300px;
+    height: 20px;
+}
+
+.SubmitButton {
+    margin-top: 2%;
+    width: 80px;
+    height: 20px;
+    color: grey;
+    
+}
+
+.SubmitButton:hover {
+    color: black;
+    
+} */
