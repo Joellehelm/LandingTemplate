@@ -67,28 +67,12 @@ p {
     background-attachment: fixed;
     background-size: cover; 
     background-repeat:no-repeat;
-
-    /* overflow-x: hidden;
-    overflow-y: auto;
-    
-    z-index: -1;  */
-
-    position: relative;
-    display: block;
-    transform-origin: bottom center;     
-    transform: 
-        translate3d(0, calc(var(--pct) * 35%), 0) down 
-        scale(calc(var(--pct)/5 + 1))  
 }
-
-
-
 
 
 .Main h1 {
     padding-top: 27%;
 }
-
 
 
 .logSign a {
