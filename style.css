@@ -17,6 +17,7 @@ p {
     border: solid black 1px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .Links a {
@@ -43,11 +44,14 @@ p {
 }
 
 
-.Logo p {
+.Logo {
+    margin-top: 15px;
+    margin-left: 55px;
     width: 200px;
-    padding-top: 25px;
+    height: 30px;
     padding-left: 40px;
-    color: rgb(56, 159, 228);
+    background: url(logo.png);
+    background-repeat: no-repeat;
     
 }
 
@@ -60,10 +64,26 @@ p {
     background-image: url('./background2.jpg');
     height: 100vh;
     width: 100vw;
- 
+    background-attachment: fixed;
     background-size: cover; 
     background-repeat:no-repeat;
+
+    /* overflow-x: hidden;
+    overflow-y: auto;
+    
+    z-index: -1;  */
+
+    position: relative;
+    display: block;
+    transform-origin: bottom center;     
+    transform: 
+        translate3d(0, calc(var(--pct) * 35%), 0) down 
+        scale(calc(var(--pct)/5 + 1))  
 }
+
+
+
+
 
 .Main h1 {
     padding-top: 27%;
@@ -79,18 +99,19 @@ p {
 
 .container {
     display: grid;
+    background-color: rgba(0, 0, 0, 0)
     
 }
 
 .aboutTitle {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 12%;
 }
 
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 4% 4% 4% 4%;
+    margin: 4% 4% 12% 4%;
     grid-gap: 4%;
 }
 
@@ -108,6 +129,41 @@ p {
 
 .secondAbout p {
     margin: 3% 3% 3% 3%;
+}
+
+.contactTitle {
+    
+    text-align: center;
+}
+
+.contactContainer {
+    padding-top: 10%;
+    background-image: url('./background2.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-repeat:no-repeat;
+}
+
+.contact {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    
+
+}
+
+.email, .address, .phone {
+    
+    padding: 1% 2% 4% 2%;
+    border: solid 3px black;
+    background-color: rgba(255, 255, 255, 0.568);
+    width: 500px;
+  
+    
 }
 
 /* .login {
